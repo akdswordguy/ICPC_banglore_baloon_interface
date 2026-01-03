@@ -2,21 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>ICPC Balloon Dashboard</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
+  <title>ICPC Balloon Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-  <header>
-    <h1>🎈 ICPC Balloon Management</h1>
-    <button id="refreshBtn">Refresh</button>
+<body>
+  <header class="site-header">
+    <div class="header-left" style="display:flex; align-items:center; gap:12px;">
+      <img src="icpc_foundation.png" alt="ICPC Foundation" class="logo" />
+    </div>
+    <div class="brand">Balloon Dashboard</div>
+    <div class="controls">
+      <input id="search" type="search" placeholder="Search team, lab, or question" aria-label="Search balloons" />
+    </div>
   </header>
 
   <main>
-    <div id="loading" class="info">Loading pending balloons…</div>
-    <div id="empty" class="info hidden">No pending balloons 🎉</div>
-    <div id="balloons" class="balloon-grid"></div>
+    <section id="balloons" class="balloon-grid" aria-live="polite"></section>
+    <div id="empty" class="empty" hidden>No pending balloons !!</div>
   </main>
 
   <script src="app.js"></script>

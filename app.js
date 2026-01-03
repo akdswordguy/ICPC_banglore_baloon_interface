@@ -1,5 +1,4 @@
 const API_URL = "https://script.google.com/macros/s/AKfycbwJq-2W1l2fFk6tIBh-CdBTx7f4QbWe-6bY46LvNcZo3QeM68vbhYrnxfjfSjnXlbX1/exec";
-
 const searchInput = document.getElementById('search');
 const balloonsContainer = document.getElementById('balloons');
 const emptyEl = document.getElementById('empty');
