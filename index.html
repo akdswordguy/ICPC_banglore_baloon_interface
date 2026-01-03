@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ICPC Balloon Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🎈 ICPC Balloon Management</h1>
+    <button id="refreshBtn">Refresh</button>
+  </header>
+
+  <main>
+    <div id="loading" class="info">Loading pending balloons…</div>
+    <div id="empty" class="info hidden">No pending balloons 🎉</div>
+    <div id="balloons" class="balloon-grid"></div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
